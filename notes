@@ -1,0 +1,34 @@
+                                         > commands for git <
+					   --------------
+
+> git intit 
+we run this command to creat folder .git inside the local repo . this folder conatin all the information git needs to track changes, including the history, configurations, and commits.
+
+> git status 
+show me the case the my repo on 
+
+> git add + files (git add * > will add all files once )
+to add files to staging area
+
+> git reset head + file
+to remove a file you add it by mistake
+
+> git commit -m "you write here any message you want "
+to add files in local repo 
+
+> git branch 
+to know where branch you are
+
+> git push + RemoteName + BranceName
+to push you changes from local repo to remote repo
+
+> git remote -v 
+to know your remote name
+
+> git pull + remote name 
+to take project from remote to your local repo to make your local repo up_to_date
+
+
+
+
+
