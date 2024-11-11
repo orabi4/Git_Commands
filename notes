@@ -31,6 +31,9 @@ to take project from remote to your local repo to make your local repo up_to_dat
 > creat a public key with ssh
  (listen to this video "https://www.youtube.com/watch?v=KhYK0cczeSY&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&index=8" )
 
+> git push -u +remote name + branch name 
+(-u) this make pull request before push to pull the latest version of the project and after this make push so don't cause conflict
+
 
 
 
