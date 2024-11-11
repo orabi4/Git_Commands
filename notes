@@ -34,6 +34,15 @@ to take project from remote to your local repo to make your local repo up_to_dat
 > git push -u +remote name + branch name 
 (-u) this make pull request before push to pull the latest version of the project and after this make push so don't cause conflict
 
+> git config -l
+contain the information such as email and name 
+
+> git config --global user.email +"your email"
+To put your email or change it 
+
+> git config --global user.name +"your name"
+To put you name or change it 
+
 
 
 
