@@ -19,7 +19,7 @@ to add files in local repo
 > git branch 
 to know where branch you are
 
-> git push + RemoteName + BranceName
+> git push + RemoteName + BranchName
 to push you changes from local repo to remote repo
 
 > git remote -v 
@@ -28,6 +28,8 @@ to know your remote name
 > git pull + remote name 
 to take project from remote to your local repo to make your local repo up_to_date
 
+> creat a public key with ssh
+ (listen to this video "https://www.youtube.com/watch?v=KhYK0cczeSY&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF&index=8" )
 
 
 
