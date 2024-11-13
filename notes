@@ -25,6 +25,9 @@ to know where branch you are
 > git push + RemoteName + BranchName
 to push you changes from local repo to remote repo
 
+> git push --force +remoteName + branchName
+to froce the system to make updates on your remote repo
+
 > git remote -v 
 to know your remote name
 
