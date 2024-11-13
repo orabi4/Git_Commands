@@ -10,6 +10,9 @@ show me the case the my repo on
 > git add + files (git add * > will add all files once )
 to add files to staging area
 
+> git rm -r +(file or folder which is deleted )
+we use this command after we delelet somthing from our repo to put the deleted file on staging area to make commit to them and push them on remote repo
+
 > git reset head + file
 to remove a file you add it by mistake
 
@@ -36,12 +39,52 @@ to take project from remote to your local repo to make your local repo up_to_dat
 
 > git config -l
 contain the information such as email and name 
-
+ 
 > git config --global user.email +"your email"
 To put your email or change it 
 
 > git config --global user.name +"your name"
 To put you name or change it 
+
+> git config --global alias.(the abbrivation you want ) + command you want to make abbrivation for it
+we use gloabel to set it for all repos not only one repo
+
+> git config --global alias.(the abbrivation)
+will display the command of this abbrivation
+
+
+> git branch + name of new branch
+to create new branch
+
+> git checkout +branch name
+to move to the branch you want 
+
+> git branch -d +branch name 
+to delte branch but it check first if we merged updates or not, if not it won't delete it and give message error
+
+>git branch -D +branch name
+to delte branch with force even we mereged updates or not
+
+> git checkout -b +branch name
+create new branch and move to it 
+
+> git branch -m + name of branch
+to make rename for a branchy 
+
+> git merge + branch name
+to merge this branch with branch you stand on
+
+> git stash (box) 
+we use it to store files: if we have two file in staging area and use this command the two file will disappear from staging area and will store in stash 
+
+> git stash pop 
+to return files to old place 
+and return the last file was added
+
+>git stash list 
+to display all files you added to stash but if you add them in different time the fill with same time will have the same id(stash@{number}
+
+
 
 
 
