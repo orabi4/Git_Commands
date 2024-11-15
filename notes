@@ -1,5 +1,5 @@
-                                         > commands for git <
-					   --------------
+                                                                                            > commands for git <
+					                                                      ----------------
 
 > git intit 
 we run this command to creat folder .git inside the local repo . this folder conatin all the information git needs to track changes, including the history, configurations, and commits.
@@ -82,13 +82,72 @@ we use it to store files: if we have two file in staging area and use this comma
 
 > git stash pop 
 to return files to old place 
-and return the last file was added
+and if we have multibel id in stash it will return the last files was added
 
 >git stash list 
-to display all files you added to stash but if you add them in different time the fill with same time will have the same id(stash@{number}
+to display all id that contain files you added to stash but if you add them in different time the files with same time will    have the same id(stash@{number}
+
+> every time we use "git stash" all files in staging area will added in the same id in stach and after that if we create a new file and use the command it will added in new id stash
+
+> git stash save " message "
+the message will written behind the id 
+
+> stash acts as a stack
+
+> git stash apply 
+it will return the last file/files we added, to staging area but it not be deleted from stash and this the difference between  ( apply and pop )
+ 
+> git stash pop stash@{number}
+we use this command if we want a specific file
+
+> git stash drop stash@{1}
+to delete id from stash and it will deletel every files in this id
+
+> git stash show 
+will display the information about files that the last id was created has
+
+> git stash show stash@{number}
+to display info of a specific id
+
+> git stash clear
+will delete all id in the stasf
 
 
+> git restore --staged + file name || git restore --staged *`
+this command is used to move file from staging area to be untracked
 
+> git clean -n 
+this command use to tell you the files will deleted but it not delete it actually
+**not that this command don't affect the files in staging area and affect files which is untracked 
 
+> git clean -f 
+this command will delete files 
+**not that this command don't affect the files in staging area and affect files which is untracked
+
+>> therea are find in git_hub a head and this head is a pointer and point ot the last commit you made and every commit has a hash 
+
+> git log 
+this command is use to display all commits you made 
+
+> git reset --hard + " hash of the commit "
+this command mean that the head pointer will move to the commit you give the hash of it and if we make push again to remote repo the commit which is apove the head pointer will be deleted 
+
+>> in github there are two type of tages 1. Lightweight Tags 2.Annotated Tags
+
+> git tag
+this command will display all tags you have 
+
+> git tag + name of your tage 
+this command will create a tag from type "Lightweight" and this type take info and message from messge you write in first commit you made  
+
+> git push + Remote name + tage name 
+to push your new tag on remote repo 
+
+> git tag -a +tage name+ -m " meassage " 
+this command will create a tage from type "Annotated" and this type not related to message you write in commit and has it own message you write it in command 
+
+> if we have a tag called v1.0 and want to delete it from local 
+ 1. git tag -d v1.0
+ 2. git push +remote Name+ --delete v1.0 
 
 
